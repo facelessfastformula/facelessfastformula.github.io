@@ -1,0 +1,232 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>The Safe Faceless System (PDF guide)</title>
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="description" content="A 63-page PDF guide with templates and checklists for making faceless videos with AI while following YouTube's published policies. No income promises.">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Archivo:wght@800;900&family=Source+Sans+3:wght@400;600;700;900&display=swap">
+<style>
+:root{
+  --ink:#0D0D0D; --paper:#FFFFFF; --soft:#F4F4F2; --line:#D4D4D0;
+  --red:#D7141A; --blue:#1456D7; --green:#0E9F5A; --yellow:#FFD23F;
+  --display:'Archivo','Arial Black',Impact,sans-serif;
+  --body:'Source Sans 3','Helvetica Neue',Arial,sans-serif;
+  color-scheme:light;
+}
+*{box-sizing:border-box}
+body{margin:0;background:var(--paper);color:var(--ink);font-family:var(--body);font-size:18px;line-height:1.55;font-weight:600}
+.wrap{max-width:1040px;margin:0 auto;padding-left:max(16px,env(safe-area-inset-left,0px));padding-right:max(16px,env(safe-area-inset-right,0px))}
+h1,h2,h3{font-family:var(--display);font-weight:900;line-height:1.02;letter-spacing:-.02em;margin:0;text-wrap:balance}
+p{margin:0 0 14px}
+a{color:var(--blue)}
+.hero{background:var(--ink);color:#fff;overflow:hidden;position:relative}
+.hero .wrap{display:grid;grid-template-columns:1.1fr .9fr;gap:32px;align-items:center;padding-block:56px 64px}
+.tag{display:inline-block;background:#fff;color:var(--ink);font-weight:900;font-size:12px;letter-spacing:.22em;padding:8px 14px;margin-bottom:22px}
+.hero h1{font-size:clamp(48px,9vw,104px);color:#fff}
+.hero h1 .r{color:var(--yellow)}
+.hero .sub{font-size:clamp(19px,2.4vw,24px);font-weight:600;margin:24px 0 28px;max-width:30ch;color:#fff}
+.btns{display:flex;gap:14px;flex-wrap:wrap}
+.btn{display:inline-block;font-family:var(--display);font-weight:900;font-size:17px;padding:16px 26px;text-decoration:none;border:3px solid #fff;color:#fff;cursor:pointer;background:transparent}
+.btn.main{background:var(--red);border-color:var(--red)}
+.fig{position:relative;aspect-ratio:1;max-width:420px;width:100%;margin:0 auto}
+.fig .ring{position:absolute;inset:0;border:4px solid #fff;border-radius:50%}
+.fig .disc{position:absolute;inset:22px;background:var(--red);border-radius:50%;overflow:hidden}
+.fig .head{position:absolute;left:50%;top:17%;width:27%;aspect-ratio:1;margin-left:-13.5%;background:#fff;border-radius:50%}
+.fig .sh{position:absolute;left:50%;top:50%;width:60%;height:60%;margin-left:-30%;background:#fff;border-radius:50% 50% 0 0}
+.fig .ok{position:absolute;right:4%;top:48%;width:16%;aspect-ratio:1;background:var(--ink);border:4px solid #fff;border-radius:50%;display:flex;align-items:center;justify-content:center}
+.tiles{display:flex;gap:10px;flex-wrap:wrap;margin-top:30px}
+.tiles span{background:#fff;color:var(--ink);font-weight:900;font-size:12px;letter-spacing:.16em;padding:9px 12px;border-top:5px solid var(--red)}
+section{padding-block:64px;border-bottom:1px solid var(--line)}
+.kick{font-weight:900;font-size:13px;letter-spacing:.2em;color:var(--red);margin-bottom:12px}
+h2{font-size:clamp(32px,5vw,52px);margin-bottom:22px}
+h3{font-size:22px;margin-bottom:8px}
+.lead{font-size:21px;max-width:60ch}
+.grid{display:grid;gap:18px}
+.g2{grid-template-columns:repeat(2,minmax(0,1fr))}
+.g3{grid-template-columns:repeat(3,minmax(0,1fr))}
+.box{background:var(--soft);padding:22px;border-top:6px solid var(--blue)}
+.box.red{border-color:var(--red)} .box.green{border-color:var(--green)} .box.yellow{border-color:var(--yellow)}
+.box p:last-child{margin:0}
+.pain{display:grid;grid-template-columns:44px minmax(0,1fr);gap:16px;padding:18px 0;border-bottom:1px solid var(--line)}
+.pain b.n{background:var(--red);color:#fff;font-family:var(--display);width:44px;height:44px;display:flex;align-items:center;justify-content:center;font-size:20px}
+.pain:nth-child(even) b.n{background:var(--blue)}
+.pain:nth-child(3n) b.n{background:var(--green)}
+.pain h3{font-size:20px;margin-bottom:4px}
+.pain p{margin:0}
+.fix{color:var(--green);font-weight:900}
+.chap{display:grid;grid-template-columns:64px minmax(0,1fr);gap:16px;padding:16px 0;border-bottom:1px solid var(--line)}
+.chap .c{font-family:var(--display);font-weight:900;font-size:34px;color:var(--blue)}
+.chap:nth-child(3n+2) .c{color:var(--red)}
+.chap:nth-child(3n) .c{color:var(--green)}
+.chap h3{font-size:20px;margin-bottom:2px}
+.chap p{margin:0}
+.dark{background:var(--ink);color:#fff;border-bottom:0}
+.dark h2{color:#fff}
+.dark .kick{color:var(--yellow)}
+.dark p{color:#fff}
+.offer{border:4px solid var(--ink);padding:28px;max-width:640px}
+.offer ul{margin:0 0 18px;padding-left:22px}
+.offer li{margin-bottom:8px}
+.offer .price{font-family:var(--display);font-weight:900;font-size:44px;line-height:1}
+.offer .price small{font-size:17px;font-weight:700;font-family:var(--body)}
+.faq details{border-bottom:1px solid var(--line);padding:16px 0}
+.faq summary{font-weight:900;font-size:19px;cursor:pointer}
+.faq details p{margin:10px 0 0}
+.src{font-size:15px;word-break:break-word}
+footer{background:var(--ink);color:#fff;padding-block:36px;font-size:15px}
+footer p{color:#fff}
+footer a{color:var(--yellow)}
+:focus-visible{outline:4px solid var(--yellow);outline-offset:3px}
+@media (max-width:820px){
+  .hero .wrap{grid-template-columns:1fr}
+  .fig{max-width:300px;order:-1}
+  .g2,.g3{grid-template-columns:1fr}
+}
+</style>
+</head>
+<body>
+
+<header class="hero">
+  <div class="wrap">
+    <div>
+      <div class="tag">PDF GUIDE / TEMPLATES / CHECKLISTS</div>
+      <h1>SAFE<br><span class="r">FACELESS</span><br>SYSTEM</h1>
+      <p class="sub">Make faceless AI videos that stay original, stay monetizable, and actually get watched.</p>
+      <div class="btns">
+        <a class="btn main" href="#get">Get the guide, $37</a>
+        <a class="btn" href="#inside">Look inside</a>
+      </div>
+      <div class="tiles"><span>VIDEO</span><span>AI-POWERED</span><span>MONETIZABLE</span><span>SAFE</span></div>
+    </div>
+    <div class="fig" aria-hidden="true">
+      <div class="ring"></div>
+      <div class="disc"><div class="head"></div><div class="sh"></div></div>
+      <div class="ok"><svg width="60%" viewBox="0 0 34 34"><path d="M6 18 L14 26 L29 9" fill="none" stroke="#fff" stroke-width="5" stroke-linecap="square"/></svg></div>
+    </div>
+  </div>
+</header>
+
+<section>
+  <div class="wrap">
+    <div class="kick">THE PROBLEM</div>
+    <h2>Five things stop most new faceless channels</h2>
+    <p class="lead">If you want to make videos without showing your face, and you want AI to help, these are the walls you hit. This guide takes them one at a time.</p>
+    <div style="margin-top:18px">
+      <div class="pain"><b class="n">1</b><div><h3>You fear demonetization</h3><p>You've heard AI channels get banned. <span class="fix">The guide reads YouTube's own pages with you and shows what they actually say.</span></p></div></div>
+      <div class="pain"><b class="n">2</b><div><h3>Nobody watches</h3><p>Same topic, same angle as everyone else. <span class="fix">A method to find the question nobody answered and build the video around it.</span></p></div></div>
+      <div class="pain"><b class="n">3</b><div><h3>It's slow and it costs money</h3><p>Tools pile up, nothing ships. <span class="fix">A low-cost production routine and a weekly rhythm.</span></p></div></div>
+      <div class="pain"><b class="n">4</b><div><h3>The output sounds robotic</h3><p>Flat scripts, flat voice. <span class="fix">A humanize pass and a read-aloud check, step by step.</span></p></div></div>
+      <div class="pain"><b class="n">5</b><div><h3>You don't trust AI-money courses</h3><p>Fair. <span class="fix">This one makes no income promises and labels every example as an example.</span></p></div></div>
+    </div>
+  </div>
+</section>
+
+<section id="inside">
+  <div class="wrap">
+    <div class="kick">INSIDE THE GUIDE</div>
+    <h2>8 chapters, 63 pages, built to be used</h2>
+    <p class="lead">Every chapter ends with a fill-in sheet or checklist and a short quiz with answers. Print it or fill it in on screen.</p>
+    <div style="margin-top:14px">
+      <div class="chap"><div class="c">1</div><div><h3>How a faceless AI channel really works</h3><p>The rules in plain words, the human-proof folder, and the math of 4,000 watch hours.</p></div></div>
+      <div class="chap"><div class="c">2</div><div><h3>Pick topics that earn a different angle</h3><p>Four topic tests, free idea methods, a comment-mining method, a topic scorecard.</p></div></div>
+      <div class="chap"><div class="c">3</div><div><h3>Write it like you'd say it</h3><p>Script shape, hooks, an AI brief that can't guess, the humanize pass, the read-aloud check.</p></div></div>
+      <div class="chap"><div class="c">4</div><div><h3>Make it well, spend little</h3><p>Honest budget, voice testing, on-screen visuals, editing, a weekly rhythm.</p></div></div>
+      <div class="chap"><div class="c">5</div><div><h3>Package it, check it, then publish</h3><p>Titles, faceless thumbnails, upload checklist, the three pre-publish policy questions.</p></div></div>
+      <div class="chap"><div class="c">6</div><div><h3>One video, many doors</h3><p>Turn one long video into shorts, read your numbers, run the comment loop, a 30-day plan.</p></div></div>
+      <div class="chap"><div class="c">7</div><div><h3>Copy, fill in, repeat</h3><p>A six-prompt pack, master checklist, folder template, policy re-check log, glossary.</p></div></div>
+      <div class="chap"><div class="c">8</div><div><h3>See it run, start to finish</h3><p>Three full worked examples, clearly labeled as examples, plus a sheet for your own first video.</p></div></div>
+    </div>
+  </div>
+</section>
+
+<section class="dark">
+  <div class="wrap">
+    <div class="kick">WHAT IT DOES NOT PROMISE</div>
+    <h2>No income claims. No fake proof.</h2>
+    <p class="lead" style="max-width:56ch">The guide doesn't tell you what you'll earn. It doesn't show screenshots of someone else's money, and it doesn't use made-up case studies as if they were real. What you earn depends on your topic, your work and your time.</p>
+    <p class="lead" style="max-width:56ch">The worked examples are labeled "not real results." When the author's channel has real results, they will be added in a later version, and labeled as real.</p>
+  </div>
+</section>
+
+<section>
+  <div class="wrap">
+    <div class="kick">CHECKED AGAINST THE SOURCE</div>
+    <h2>The rules come from YouTube's own pages</h2>
+    <div class="grid g3" style="margin-top:8px">
+      <div class="box"><h3>Eligibility</h3><p>Two routes to apply for the YouTube Partner Program, each with its own threshold. Meeting one isn't approval.</p></div>
+      <div class="box red"><h3>Inauthentic content</h3><p>Mass-produced or repetitive content can't monetize. Each video needs substance of its own.</p></div>
+      <div class="box green"><h3>AI label</h3><p>Required for realistic AI-made or altered content. Not required for AI scripts, titles or thumbnails.</p></div>
+    </div>
+    <p class="src" style="margin-top:22px">Read in October 2026: support.google.com/youtube/answer/72851, /1311392, /14328491. Rules change, so the guide tells you to re-check every three months.</p>
+  </div>
+</section>
+
+<section id="get">
+  <div class="wrap">
+    <div class="kick">WHAT YOU GET</div>
+    <h2>One PDF guide. One price.</h2>
+    <div class="offer">
+      <h3>The Safe Faceless System (PDF guide)</h3>
+      <ul>
+        <li>The 63-page guide as a PDF download</li>
+        <li>All fill-in sheets and checklists</li>
+        <li>The six-prompt pack</li>
+        <li>Instant access right after you pay</li>
+      </ul>
+      <div class="price">$37 <small>USD, one payment</small></div>
+      <p style="margin:12px 0 18px">60-day return period. Tax, if any applies where you live, is shown at checkout before you pay.</p>
+      <a class="btn main" href="https://www.checkout-ds24.com/product/755115" id="buy" style="border-color:var(--red)">Buy now, $37</a>
+      <p class="src" style="margin-top:14px">Secure checkout by Digistore24. This is a digital product. Nothing is shipped to you.</p>
+    </div>
+  </div>
+</section>
+
+<section id="terms">
+  <div class="wrap">
+    <div class="kick">BEFORE YOU BUY</div>
+    <h2>How buying works</h2>
+    <div class="grid g3">
+      <div class="box"><h3>What you receive</h3><p>A digital file. No paper book is posted to you. You get the PDF as a download right after payment.</p></div>
+      <div class="box green"><h3>60-day return</h3><p>Not for you? Ask for your money back within 60 days of buying. No long form, no argument.</p></div>
+      <div class="box yellow"><h3>Payment</h3><p>Orders are handled through our payment partner, Digistore24. The final price, tax and terms are shown at checkout before you pay.</p></div>
+    </div>
+    <p class="src" style="margin-top:22px">This is an educational guide. It does not promise views, subscribers, monetization or income. What you earn, if anything, depends on your own work and on decisions YouTube makes.</p>
+  </div>
+</section>
+
+<section>
+  <div class="wrap">
+    <div class="grid g2">
+      <div class="box green"><h3>This is for you if</h3><p>You want to publish videos without being on camera, you're willing to add your own view to each one, and you want a repeatable routine.</p></div>
+      <div class="box red"><h3>This is not for you if</h3><p>You want a button that makes money for you, or a guarantee of views or income. Nothing honest can offer that.</p></div>
+    </div>
+  </div>
+</section>
+
+<section class="faq">
+  <div class="wrap">
+    <div class="kick">QUESTIONS</div>
+    <h2>Straight answers</h2>
+    <details><summary>Will this get my channel monetized?</summary><p>No one can promise that. YouTube reviews each channel. The guide shows how to meet the published thresholds and how to avoid the most common policy problems.</p></details>
+    <details><summary>Do I need to be on camera?</summary><p>No. The system is built for voice, screen recordings, slides and generated visuals.</p></details>
+    <details><summary>Was this guide written with AI?</summary><p>Yes, with help. The author used an AI assistant (Claude) to help draft and edit it, and checked the policy facts against YouTube's own pages. The guide teaches you to use AI as a helper and to add your own view, your own checks and your own proof to every video.</p></details>
+    <details><summary>Which tools do I need?</summary><p>Free or low-cost ones to start. The guide gives a budget sheet, and tool prices change, so check them before you pay.</p></details>
+    <details><summary>How do I get the guide?</summary><p>It is a PDF. After you pay, you get a download link on the thank-you page and in your order email. Save the file to your own computer.</p></details>
+    <details><summary>Who is behind this?</summary><p>One independent creator, Khalid Osman Gasmelseed, who is building a faceless YouTube channel (Faceless Fast Formula) with the same routine the guide teaches. The channel is new, so this page shows no results and does not pretend to.</p></details>
+    <details><summary>What is the refund policy?</summary><p>60 days. If the guide isn't for you, ask for your money back within 60 days of buying. It is stated at checkout too.</p></details>
+    <details><summary>Who do I contact for help?</summary><p>Write to <a href="mailto:kgjadalrab0215@gmail.com">kgjadalrab0215@gmail.com</a> and include your order number.</p></details>
+  </div>
+</section>
+
+<footer>
+  <div class="wrap">
+    <p><b>Seller:</b> Faceless Fast Formula, operated by Khalid Osman Gasmelseed<br>
+    1319 Washington # 203, San Leandro, CA 94577, USA<br>
+    Support: <a href="mailto:kgjadalrab0215@gmail.com">kgjadalrab0215@gmail.com</a></p>
+    <p>Payments and invoicing are handled by Digistore24. Not affiliated with or endorsed by YouTube or Google. No results or income are promised or implied.</p>
+  </div>
+</footer>
+
+</body>
+</html>
